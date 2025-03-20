@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "A passionate full-stack developer exploring every tech stack, crafting seamless and innovative digital experiences.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -57,23 +57,25 @@ const skillsSection = {
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ), 
+     emoji(
+      "⚡ Build quality mobile apps using flutter/ React Native"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
+      skillName: "Sass",
       fontAwesomeClassname: "fab fa-sass"
     },
     {
@@ -81,42 +83,65 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "React.js",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Next.js",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "NestJS",
+      fontAwesomeClassname: "fas fa-server"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "GraphQL",
+      fontAwesomeClassname: "fas fa-project-diagram"
     },
     {
-      skillName: "sql-database",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-cube"
+    },
+    {
+      skillName: "Jest",
+      fontAwesomeClassname: "fas fa-vial"
+    },
+    {
+      skillName: "Cypress",
+      fontAwesomeClassname: "fas fa-flask"
+    },
+    {
+      skillName: "Storybook",
+      fontAwesomeClassname: "fas fa-book"
+    }],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -127,22 +152,14 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Addis Ababa University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      logo: require("./assets/images/aaulogo.png"),
+      subHeader: "Bachelors of Science in Computer Science",
+      duration: "September 2017 - June 2018",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "",
+        ""
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -171,35 +188,70 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set to true to show the Work Experience section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Frontend Developer",
+      company: "Steamlined Solutions",
+      companylogo: require("./assets/images/steamlinedSolutionsLogo.png"),
+      date: "April 2024 – Present",
+      desc: "Developing AI-powered sales automation tools to enhance team efficiency and user experience.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and implemented AI-powered dashboards, improving sales productivity by 30%",
+        "Optimized UI performance using React.memo and code-splitting",
+        "Led testing and deployment, ensuring quality with Jest and Cypress"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senior Frontend Developer",
+      company: "Elnet Technologies",
+      companylogo: require("./assets/images/elnetTechnologiesLogo.png"),
+      date: "March 2022 – December 2024",
+      desc: "Led frontend development on multiple high-impact projects across different industries.",
+      descBullets: [
+        "Built Taxiye, a ride-booking app with Strapi CMS, reducing booking time by 40%",
+        "Developed ELTNT Tours & Travel, increasing tour package sales by 25%",
+        "Created Houfa Africa, a real-time security alert system for Nigerian users"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full-Stack Developer",
+      company: "Prophecius Technologies",
+      companylogo: require("./assets/images/propheciusLogo.png"),
+      date: "July 2023 – May 2024",
+      desc: "Worked on multiple SaaS and consumer applications, leading frontend and backend development.",
+      descBullets: [
+        "Developed ReserveXp, a multi-tenant travel SaaS platform",
+        "Led Passio, a multi-service e-commerce, taxi, and delivery app",
+        "Built Curewantri, a telemedicine and pharmacy platform",
+        "Integrated real-time betting odds and Stripe payments for LiveGamer"
+      ]
+    },
+    {
+      role: "Full-Stack Developer",
+      company: "Yerras IT Technology Group",
+      companylogo: require("./assets/images/yerrasLogo.png"),
+      date: "October 2020 – January 2022",
+      desc: "Developed e-commerce and business management platforms.",
+      descBullets: [
+        "Built Yerras E-commerce, enhancing agriculture trade efficiency",
+        "Developed Yerras Web, a financial management system for businesses"
+      ]
+    },
+    {
+      role: "Information Technology Officer",
+      company: "Berhan Bank",
+      companylogo: require("./assets/images/berhanBankLogo.png"),
+      date: "January 2019 – September 2020",
+      desc: "Managed IT infrastructure and developed automation tools.",
+      descBullets: [
+        "Ensured 99.9% uptime for core banking systems",
+        "Developed automation tools, improving efficiency by 20%"
+      ]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -306,41 +358,34 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Technical Insights",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Exploring the ever-evolving world of full-stack development, I write about cutting-edge technologies, best practices, and lessons learned from real-world projects.",
+  displayMediumBlogs: true, // Fetching latest blogs dynamically
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@your-profile/optimizing-next-js-performance-best-practices",
+      title: "Optimizing Next.js Performance: Best Practices",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A deep dive into Next.js optimizations, covering ISR, caching strategies, and advanced techniques for blazing-fast web apps."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@your-profile/mastering-state-management-in-react",
+      title: "Mastering State Management in React: Context API vs Redux Toolkit",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
+        "Understanding when to use Context API, Redux, or Zustand for scalable state management in modern React applications."
+    },
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      url: "https://medium.com/@your-profile/graphql-vs-rest-api-choosing-the-right-architecture",
+      title: "GraphQL vs REST API: Choosing the Right Architecture",
+      description:
+        "Breaking down the pros and cons of GraphQL and REST, with real-world use cases and performance considerations."
+    },
+    {
+      url: "https://medium.com/@your-profile/full-stack-deployment-docker-kubernetes-ci-cd",
+      title: "Full-Stack Deployment: Docker, Kubernetes, and CI/CD Best Practices",
+      description:
+        "A practical guide to deploying scalable applications using Docker, Kubernetes, and automated CI/CD pipelines."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -348,16 +393,7 @@ const talkSection = {
 
 // Podcast Section
 
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
 
 // Resume Section
 const resumeSection = {
@@ -398,8 +434,7 @@ export {
   bigProjects,
   achievementSection,
   blogSection,
-  talkSection,
-  podcastSection,
+ 
   contactInfo,
   twitterDetails,
   isHireable,
